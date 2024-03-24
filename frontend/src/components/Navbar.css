@@ -1,0 +1,24 @@
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #554640;
+  margin: 0% -1% 0% -1%;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #cde6f5;
+  text-align: center;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  text-indent: 0%;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #3d342e;
+  color: #a0c1de;
+}

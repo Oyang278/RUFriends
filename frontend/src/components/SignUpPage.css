@@ -1,0 +1,8 @@
+.textbox {
+  background-color: beige;
+  margin: 5px;
+}
+
+ul#signup {
+  list-style-type: none;
+}
