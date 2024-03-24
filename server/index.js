@@ -38,6 +38,18 @@ app.post('/postInfo',(request, response)=>{
     database.collection('userlogincollection').insertOne(newUser);
 });
 
+app.post('/postInfo/createUserProfile',(request, response)=>{
+    const newUser = {
+        username:request.body.username,
+        profileImg:'https://th.bing.com/th/id/OIP.z_n1P__qQV1JpHZs8yNmlwHaHa?rs=1&pid=ImgD…',
+        fname:request.body.fname,
+        lname:request.body.lname,
+        dob:request.body.dob,
+        email:request.body.email
+    }
+    database.collection('userinfocollection').insertOne(newUser);
+});
+
 app.delete('/deleteInfo',(request, response)=>{
     const filter = { username: request.body.username}
     database.collection('userlogincollection').deleteOne(filter);
